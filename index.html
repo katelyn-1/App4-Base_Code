@@ -34,22 +34,22 @@ blah, blah, blah, blah
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var adhdlikely_count = 0;
+        var adhdunlikely_count = 0;
 	
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+        function ADHDAdd(){
+            adhdlikely_count = adhdlikely_count + 1;
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function normalAdd(){
+            adhdunlikely_countadhdunlikely_count = adhdunlikely_count + 1;
         }
 	
 	function results(){
-	var allergyPercent = (allergy_count / 6) * 100;
-	var coldPercent = (cold_count / 6) * 100;
+	var ADHDPercent = (adhdlikely_count / 6) * 100;
+	var normalPercent = (adhdunlikely_count / 6) * 100;
 	var resultText = document.getElementById("results");
-	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%<br> Probability it is a cold =" + coldPercent + "%";	
+	resultText.innerHTML = "Likelihood of having ADHD =" + adhdlikely_count + "%<br> Likelihood of not having ADHD =" + adhdunlikely_count + "%";	
 	}
 	
   </script>
